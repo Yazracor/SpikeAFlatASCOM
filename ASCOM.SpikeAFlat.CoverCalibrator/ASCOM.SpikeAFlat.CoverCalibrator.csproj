@@ -154,6 +154,7 @@
   <ItemGroup>
     <Content Include="ReadMeSpikeAFlat.html" />
     <Content Include="LICENSE.txt" />
+    <Content Include="SpikeAFlat Setup.iss" />
     <None Include="app.config" />
     <None Include="ASCOM.png" />
     <None Include="ASCOMDriverTemplate.snk" />

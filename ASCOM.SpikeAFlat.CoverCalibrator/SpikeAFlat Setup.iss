@@ -10,7 +10,7 @@ AppVersion=0.2
 AppPublisher=Torben van Hees <leavenworth@gmx.de>
 AppPublisherURL=mailto:leavenworth@gmx.de
 AppSupportURL=https://ascomtalk.groups.io/g/Help
-AppUpdatesURL=https://astro.van-hees.name
+AppUpdatesURL=https://github.com/Yazracor/SpikeAFlatASCOM
 VersionInfoVersion=1.0.0
 MinVersion=6.1.7601
 DefaultDirName="{cf}\ASCOM\CoverCalibrator"
@@ -22,7 +22,7 @@ Compression=lzma
 SolidCompression=yes
 ; Put there by Platform if Driver Installer Support selected
 WizardImageFile="C:\Program Files (x86)\ASCOM\Platform 6 Developer Components\Installer Generator\Resources\WizardImage.bmp"
-LicenseFile="C:\Program Files (x86)\ASCOM\Platform 6 Developer Components\Installer Generator\Resources\CreativeCommons.txt"
+LicenseFile="C:\Users\ST-860\source\repos\SpikeAFlatASCOM\ASCOM.SpikeAFlat.CoverCalibrator\LICENSE.txt"
 ; {cf}\ASCOM\Uninstall\CoverCalibrator folder created by Platform, always
 UninstallFilesDir="{cf}\ASCOM\Uninstall\CoverCalibrator\SpikeAFlat"
 
@@ -34,13 +34,13 @@ Name: "{cf}\ASCOM\Uninstall\CoverCalibrator\SpikeAFlat"
 ; TODO: Add subfolders below {app} as needed (e.g. Name: "{app}\MyFolder")
 
 [Files]
-Source: "C:\Users\ST-860\source\repos\ASCOM.SpikeAFlat.CoverCalibrator\ASCOM.SpikeAFlat.CoverCalibrator\bin\Release\ASCOM.SpikeAFlat.CoverCalibrator.dll"; DestDir: "{app}"
+Source: "C:\Users\ST-860\source\repos\SpikeAFlatASCOM\ASCOM.SpikeAFlat.CoverCalibrator\bin\Release\ASCOM.SpikeAFlat.CoverCalibrator.dll"; DestDir: "{app}"
 ; Require a read-me HTML to appear after installation, maybe driver's Help doc
-Source: "C:\Users\ST-860\source\repos\ASCOM.SpikeAFlat.CoverCalibrator\ASCOM.SpikeAFlat.CoverCalibrator\ReadMeSpikeAFlat.html"; DestDir: "{app}"; Flags: isreadme
+Source: "C:\Users\ST-860\source\repos\SpikeAFlatASCOM\ASCOM.SpikeAFlat.CoverCalibrator\ReadMeSpikeAFlat.html"; DestDir: "{app}"; Flags: isreadme
 ; TODO: Add other files needed by your driver here (add subfolders above)
 Source: "C:\Users\ST-860\source\repos\hidapiadapter\HidApiAdapter\bin\Release\net472\HidApiAdapter.dll"; DestDir: "{app}"
-Source: "C:\Users\ST-860\source\repos\ASCOM.SpikeAFlat.CoverCalibrator\ASCOM.SpikeAFlat.CoverCalibrator\bin\Release\hidapi32.dll"; DestDir: "{app}"
-Source: "C:\Users\ST-860\source\repos\ASCOM.SpikeAFlat.CoverCalibrator\ASCOM.SpikeAFlat.CoverCalibrator\bin\Release\hidapi64.dll"; DestDir: "{app}"
+Source: "C:\Users\ST-860\source\repos\SpikeAFlatASCOM\ASCOM.SpikeAFlat.CoverCalibrator\bin\Release\hidapi32.dll"; DestDir: "{app}"
+Source: "C:\Users\ST-860\source\repos\SpikeAFlatASCOM\ASCOM.SpikeAFlat.CoverCalibrator\bin\Release\hidapi64.dll"; DestDir: "{app}"
 
 ; Only if driver is .NET
 [Run]
