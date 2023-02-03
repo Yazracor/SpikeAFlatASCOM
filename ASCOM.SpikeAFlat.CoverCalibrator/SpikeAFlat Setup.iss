@@ -34,13 +34,13 @@ Name: "{cf}\ASCOM\Uninstall\CoverCalibrator\SpikeAFlat"
 ; TODO: Add subfolders below {app} as needed (e.g. Name: "{app}\MyFolder")
 
 [Files]
-Source: "C:\Users\ST-860\source\repos\SpikeAFlatASCOM\ASCOM.SpikeAFlat.CoverCalibrator\bin\Release\ASCOM.SpikeAFlat.CoverCalibrator.dll"; DestDir: "{app}"
+Source: ".\bin\Release\ASCOM.SpikeAFlat.CoverCalibrator.dll"; DestDir: "{app}"
 ; Require a read-me HTML to appear after installation, maybe driver's Help doc
-Source: "C:\Users\ST-860\source\repos\SpikeAFlatASCOM\ASCOM.SpikeAFlat.CoverCalibrator\ReadMeSpikeAFlat.html"; DestDir: "{app}"; Flags: isreadme
+Source: ".\\ReadMeSpikeAFlat.html"; DestDir: "{app}"; Flags: isreadme
 ; TODO: Add other files needed by your driver here (add subfolders above)
-Source: "C:\Users\ST-860\source\repos\hidapiadapter\HidApiAdapter\bin\Release\net472\HidApiAdapter.dll"; DestDir: "{app}"
-Source: "C:\Users\ST-860\source\repos\SpikeAFlatASCOM\ASCOM.SpikeAFlat.CoverCalibrator\bin\Release\hidapi32.dll"; DestDir: "{app}"
-Source: "C:\Users\ST-860\source\repos\SpikeAFlatASCOM\ASCOM.SpikeAFlat.CoverCalibrator\bin\Release\hidapi64.dll"; DestDir: "{app}"
+Source: ".\..\..\hidapiadapter\HidApiAdapter\bin\Release\net472\HidApiAdapter.dll"; DestDir: "{app}"
+Source: ".\bin\Release\hidapi32.dll"; DestDir: "{app}"
+Source: ".\bin\Release\hidapi64.dll"; DestDir: "{app}"
 
 ; Only if driver is .NET
 [Run]
